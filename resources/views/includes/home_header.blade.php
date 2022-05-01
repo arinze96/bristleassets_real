@@ -19,7 +19,7 @@
           <div class="row">
               <div class="col-md-2 header-logo">
                   <a href="{{ route('app.home') }}">
-                      Bristle<span>Assets</span>
+                      <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 100px; height: 50px" alt="">
                   </a>
               </div>
               <!--col-md-2-->
@@ -34,22 +34,22 @@
                               <li>
                                   <a href="{{ route('pricing') }}">Pricing</a>
                               </li>
-                              <li>
-                                  <a href="{{ route('user.faq') }}">FAQ</a>
-                              </li>
                              
                               
                               <li class="">
                                   <a href="#">Specials<i class="fa fa-angle-down"></i></a>
                                   <ul>
                                       <li><a href="{{ route('usdt') }}">USDT</a></li>
+                                      <li>
+                                        <a href="{{ route('user.faq') }}">FAQ</a>
+                                    </li>
                                       <li><a href="{{ route('giveaway') }}">Giveaway</a></li>
                                       <li><a href="{{ route('diamondclub') }}">Diamond club</a></li>
                                   </ul>
                               </li>
-                              {{-- <li>
+                              <li>
                                 <a href="{{ route('user.register') }}">SIGN UP</a>
-                            </li> --}}
+                            </li>
                             <li>
                                 <a href="{{ route('user.login') }}">SIGN IN</a>
                             </li>

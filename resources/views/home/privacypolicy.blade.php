@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>Terms and Conditions</title>
+    <title>Privacy Policy</title>
 
     @include('includes.home_header')
 </head>

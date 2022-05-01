@@ -41,12 +41,12 @@
                                         <h4>{{ ucwords($plan->name) }}</h4>
                                     </div>
                                     <div class="card-body">
-                                        <h3 class="bill"><span>MIN-</span>
-                                            ${{ $plan->currency == 'USD' ? number_format($plan->min, 0, '.', ',') : $plan->min }}
-                                            {{ $plan->currency }}</h3>
-                                        <h3 class="bill"><span>MAX-</span>
-                                            ${{ $plan->currency == 'USD' ? number_format($plan->max, 0, '.', ',') : $plan->max }}
-                                            {{ $plan->currency }}</h3>
+                                        <h6 class="bill"><span>MIN-</span>
+                                            {{ $plan->currency == 'USD' ? number_format($plan->min, 0, '.', ',') : $plan->min }}
+                                            {{ $plan->currency }}</h6>
+                                        <h6 class="bill"><span>MAX-</span>
+                                            {{ $plan->currency == 'USD' ? number_format($plan->max, 0, '.', ',') : $plan->max }}
+                                            {{ $plan->currency }}</h6>
                                     </div>
                                     <ul class="list-group list-group-flush">
                                         {{-- <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Type

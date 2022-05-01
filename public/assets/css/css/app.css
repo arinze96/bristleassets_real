@@ -62,13 +62,13 @@ a {
 	margin-left: 10px;
 	margin-bottom: 0;
 	letter-spacing: 1px;
-	color: rgb(152,204,159)
+	color: rgb(14, 31, 113)
 }
 
 .toggle-icon {
 	font-size: 22px;
 	cursor: pointer;
-	color: rgb(152,204,159)
+	color: rgb(14, 31, 113)
 }
 
 .topbar {
@@ -221,7 +221,7 @@ a {
 .sidebar-wrapper .metismenu a:active,
 .sidebar-wrapper .metismenu a:focus,
 .sidebar-wrapper .metismenu a:hover {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
 	text-decoration: none;
 	background: rgb(13 110 253 / .12)
 }
@@ -342,7 +342,7 @@ a {
 	border-radius: 10px;
 	bottom: 20px;
 	right: 12px;
-	background-color: rgb(152,204,159);
+	background-color: rgb(14, 31, 113);
 	z-index: 5
 }
 
@@ -540,7 +540,7 @@ a {
 }
 
 .fm-menu .list-group a:hover {
-	background: rgb(152,204,159);
+	background: rgb(14, 31, 113);
 	color: #fff;
 	transition: all .2s ease-out
 }
@@ -886,7 +886,7 @@ a {
 .invoice header {
 	padding: 10px 0;
 	margin-bottom: 20px;
-	border-bottom: 1px solid rgb(152,204,159)
+	border-bottom: 1px solid rgb(14, 31, 113)
 }
 
 .invoice .company-details {
@@ -917,7 +917,7 @@ a {
 
 .invoice .invoice-details .invoice-id {
 	margin-top: 0;
-	color: rgb(152,204,159)
+	color: rgb(14, 31, 113)
 }
 
 .invoice main {
@@ -932,7 +932,7 @@ a {
 
 .invoice main .notices {
 	padding-left: 6px;
-	border-left: 6px solid rgb(152,204,159);
+	border-left: 6px solid rgb(14, 31, 113);
 	background: #e7f2ff;
 	padding: 10px
 }
@@ -964,7 +964,7 @@ a {
 .invoice table td h3 {
 	margin: 0;
 	font-weight: 400;
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
 	font-size: 1.2em
 }
 
@@ -978,7 +978,7 @@ a {
 .invoice table .no {
 	color: #fff;
 	font-size: 1.6em;
-	background: rgb(152,204,159)
+	background: rgb(14, 31, 113)
 }
 
 .invoice table .unit {
@@ -986,7 +986,7 @@ a {
 }
 
 .invoice table .total {
-	background: rgb(152,204,159);
+	background: rgb(14, 31, 113);
 	color: #fff
 }
 
@@ -1009,9 +1009,9 @@ a {
 }
 
 .invoice table tfoot tr:last-child td {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
 	font-size: 1.4em;
-	border-top: 1px solid rgb(152,204,159)
+	border-top: 1px solid rgb(14, 31, 113)
 }
 
 .invoice table tfoot tr td:first-child {
@@ -1173,7 +1173,7 @@ a {
 
 .chat-tab-menu .nav-pills .nav-link.active,
 .chat-tab-menu .nav-pills .show>.nav-link {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
 	background-color: rgb(0 123 255 / 0%)
 }
 
@@ -1468,8 +1468,8 @@ a {
 }
 
 .nav-primary.nav-tabs .nav-link.active {
-	color: rgb(152,204,159);
-	border-color: rgb(152,204,159) rgb(152,204,159) #fff
+	color: rgb(14, 31, 113);
+	border-color: rgb(14, 31, 113) rgb(14, 31, 113) #fff
 }
 
 .nav-danger.nav-tabs .nav-link.active {
@@ -1819,19 +1819,19 @@ a {
 
 
 .btn-inverse-primary {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgb(209, 234, 255);
 }
 
 .btn-inverse-primary:hover {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgba(0, 140, 255, 0.18);
 }
 
 .btn-inverse-primary:focus {
-	color: rgb(152,204,159);
+	color: rgb(14, 31, 113);
     background-color: rgba(0, 140, 255, 0.18);
     border-color: rgba(0, 140, 255, 0.18);
 	box-shadow: 0 0 0 .25rem rgba(49, 132, 253, .3)
@@ -2353,7 +2353,7 @@ input.search-control-2::placeholder {
 	height: 40px;
 	line-height: 40px;
 	font-size: 24px;
-	background: rgb(152,204,159);
+	background: rgb(14, 31, 113);
 	box-shadow: 0 .3rem .6rem rgba(0, 0, 0, .13);
 	color: #fff;
 	text-align: center;

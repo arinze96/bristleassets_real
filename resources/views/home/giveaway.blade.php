@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>Bitway - Crypto Currency HTML5 Template</title>
+    <title>giveaway</title>
 
     @include('includes.home_header')
 </head>
@@ -30,7 +30,7 @@
                 </div>
                 <!--col-lg-5-->
                 <div class="col-md-12 col-lg-6 banner-img wow fadeInUp" data-wow-delay="0.4s">
-                    <img src="{{ asset('assets/images/blog/undraw_selecting_re_5ff6.svg') }}" alt="header-img2">
+                    <img src="{{ asset('assets/images/blog/undraw_selecting_re_5ff6.svg') }}" style="width: 400px; 400px" alt="header-img2">
                 </div>
                 <!--col-lg-7-->
             </div>

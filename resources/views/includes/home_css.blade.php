@@ -1,5 +1,5 @@
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/png">
+<link rel="shortcut icon" href="{{ asset('assets/images/blog/Bristle Assets-02.png') }}" type="image/png">
 
 <!--==== BASE CSS ====-->
 <link href="{{ asset('assets/css1/bootstrap.min.css') }}" rel="stylesheet">

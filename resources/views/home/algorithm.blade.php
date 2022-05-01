@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>Bitway - Crypto Currency HTML5 Template</title>
+    <title>Algorithms</title>
 
     @include('includes.home_header')
 </head>

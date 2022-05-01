@@ -7,7 +7,7 @@
              <div class="col-md-3 footer-text">
 
                  <h4>BristleAssets</h4>
-                 <img src="imagelink.com/img/13718623" height="100" width="100">
+                 <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 200px; height: 100px" alt="">
 
              </div>
              <!--col-md-4-->

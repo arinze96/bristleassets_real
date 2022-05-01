@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>Bristle Assets</title>
+    <title>About Bristle Assets</title>
 
     @include('includes.home_header')
 </head>

@@ -1,10 +1,10 @@
 <div class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div>
-            <img src="{{ asset("assets/images/just1.jpg") }}" class="logo-icon" alt="logo icon">
+            {{-- <img src="{{ asset("assets/images/just1.jpg") }}" class="logo-icon" alt="logo icon"> --}}
         </div>
         <div>
-            <h5 class="logo-text" style="color: rgb(152,204,159)">Bizzainvest</h5>
+            <h5 class="logo-text" style="color: rgb(14,13,113)">BristlAssets</h5>
         </div>
         <div class="toggle-icon ms-auto"><i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
