@@ -1,0 +1,14 @@
+ <!--===== JAVASCRIPT FILES =====-->
+ <script src="{{ asset('assets/js1/jquery-2.1.4.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/tether.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/bootstrap.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/owl-carousel.js') }}"></script>
+ <script src="{{ asset('assets/js1/jquery-validator.js') }}"></script>
+ <script src="{{ asset('assets/js1/waypoints.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/jquery.counterup.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/jquery.meanmenu.js') }}"></script>
+ <script src="{{ asset('assets/js1/active-scroll-nav.js') }}"></script>
+ <script src="{{ asset('assets/js1/particles.min.js') }}"></script>
+ <script src="{{ asset('assets/js1/app.js') }}"></script>
+ <script src="{{ asset('assets/js1/wow.js') }}"></script>
+ <script src="{{ asset('assets/js1/main.js') }}"></script>
