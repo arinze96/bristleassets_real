@@ -53,11 +53,11 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
 
                 <!--BLOCK ROW START-->
-                <div class="row">
-                    <div class="col-md-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -99,13 +99,13 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>10 GH/s = 0.9$</span> </li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 5% Daily</span></li>
-                                    <li><span>Contract Duration: 5 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
-                                    <li><span>Min. contract: 1120 GH/s</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">Min. contract: 1120 GH/s</span></li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -121,7 +121,7 @@
 
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content active clearfix">
@@ -163,13 +163,13 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>10 GH/s = 0.9$</span> </li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 0.5% Daily</span></li>
-                                    <li><span>Contract Duration: 20 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
-                                    <li><span>Min. contract: 5145 GH/s</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 20 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">Min. contract: 5145 GH/s</span></li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -184,7 +184,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -226,13 +226,13 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>10 GH/s = 0.9$</span> </li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 0.8% Daily</span></li>
-                                    <li><span>Contract Duration: 5 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
-                                    <li><span>Min. contract: 19600 GH/s</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.8% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">Min. contract: 19600 GH/s</span></li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -247,7 +247,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -289,13 +289,13 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>10 GH/s = 0.9$</span> </li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 5% Daily</span></li>
-                                    <li><span>Contract Duration: 5 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
-                                    <li><span>Min. contract: 77178 GH/s</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">Min. contract: 77178 GH/s</span></li>
                                     
                                 </ul>
                             </div>
@@ -311,7 +311,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3" style="margin-top: 30px">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -325,7 +325,7 @@
                                     <!--HEAD START-->
                                     <div class="head_bg"></div>
                                     <div class="head">
-                                        <span>INFINITE TURBO RIG</span>
+                                        <span style="font-size: 20px">INFINITE TURBO RIG</span>
                                     </div>
                                     <!--//HEAD END-->
 
@@ -353,13 +353,13 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>10 GH/s = 90$</span> </li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 1.5% Daily</span></li>
-                                    <li><span>Contract Duration: 5 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
-                                    <li><span>Min. contract: 19600  GH/s</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">10 GH/s = 90$</span> </li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 1.5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">Min. contract: 19600  GH/s</span></li>
                                     
                                 </ul>
                             </div>
@@ -389,17 +389,17 @@
                     <div class="col-md-12">
                         <!--PRICE HEADING START-->
                         <div class="price-heading clearfix">
-                            <h1>Our Mining Plan</h1>
+                            <h1>Our Trading Plan</h1>
                         </div>
                         <!--//PRICE HEADING END-->
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
 
                 <!--BLOCK ROW START-->
-                <div class="row">
-                    <div class="col-md-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -441,12 +441,12 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    {{-- <li><span>10 GH/s = 0.0$</span> </li> --}}
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 0.5% Daily</span></li>
-                                    <li><span>Contract Duration: 10 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    {{-- <li><span style="font-size: 12px">10 GH/s = 0.0$</span> </li> --}}
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 10 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
                                     {{-- <li><span>Min. contract: 1120 GH/s</span></li> --}}
                                 </ul>
                             </div>
@@ -462,7 +462,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content active clearfix">
@@ -500,11 +500,11 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 0.8% Daily</span></li>
-                                    <li><span>Contract Duration: 20 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.8% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 20 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -519,7 +519,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -557,11 +557,11 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 1.1% Daily</span></li>
-                                    <li><span>Contract Duration: 30 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 1.1% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 30 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -576,7 +576,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -614,11 +614,11 @@
                             <!--FEATURE LIST START-->
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 0.5% Daily</span></li>
-                                    <li><span>Contract Duration: 10 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 10 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
                                     
                                 </ul>
                             </div>
@@ -634,7 +634,7 @@
                         <!--//PRICE CONTENT END-->
 
                     </div>
-                    <div class="col-md-3" style="margin-top: 30px">
+                    <div class="col-md-2">
 
                         <!--PRICE CONTENT START-->
                         <div class="generic_content clearfix">
@@ -668,11 +668,11 @@
 
                             <div class="generic_feature_list">
                                 <ul>
-                                    <li><span>SHA-256</span></li>
-                                    <li><span>Maintenance fee: $0.00</span></li>
-                                    <li><span>Profit: 1.1% Daily</span></li>
-                                    <li><span>Contract Duration: 30 Days</span></li>
-                                    <li><span>Payouts - every day</span></li>
+                                    <li><span style="font-size: 12px">SHA-256</span></li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Profit: 1.1% Daily</span></li>
+                                    <li><span style="font-size: 12px">Contract Duration: 30 Days</span></li>
+                                    <li><span style="font-size: 12px">Payouts - every day</span></li>
                                     
                                 </ul>
                             </div>

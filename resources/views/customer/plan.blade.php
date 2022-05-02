@@ -31,75 +31,188 @@
                         </nav>
                     </div>
                 </div>
-                @if (!$plans->isEmpty())
-                    <div class="row">
-                        @foreach ($plans as $key => $plan)
-                            <div class="col-12 col-sm-8 col-md-6 col-lg-3">
-                                <div class="card text-center">
-                                    <div
-                                        class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
-                                        <h4>{{ ucwords($plan->name) }}</h4>
+
+                <a class="btn btn-primary mb-3 collapsed" data-toggle="collapse" href="#collapseContent1" role="button"
+                    aria-expanded="false" aria-controls="collapseContent1" style="width: 100%; background-color:rgb(14,31,113)"><span class="if-collapsed"><b>+</b> Show
+                        All Minig Plans </span>
+                    <span class="if-not-collapsed"><b>-</b> Hide Content</span></a>
+                <div class="collapse" id="collapseContent1">
+                    <div class="card card-body">
+                        @if (!$plans->isEmpty())
+                            <div class="row">
+                                <?php $count = 0;
+                                // $changed = (array)$plans;
+                                // $case = array_slice($changed, 2);
+                                ?>
+                                @foreach ($plans as $key => $plan)
+                                    <?php if ($key < 5) {
+                                        continue;
+                                    } ?>
+                                    <div class="col-12 col-sm-8 col-md-6 col-lg-3" id="plans" style="display: block">
+                                        <div class="card text-center">
+                                            <div
+                                                class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
+                                                <h4>{{ ucwords($plan->name) }}</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="bill"><span>MIN-</span>
+                                                    {{ $plan->currency == 'USD' ? number_format($plan->min, 0, '.', ',') : $plan->min }}
+                                                    {{ $plan->currency }}</h6>
+                                                <h6 class="bill"><span>MAX-</span>
+                                                    {{ $plan->currency == 'USD' ? number_format($plan->max, 0, '.', ',') : $plan->max }}
+                                                    {{ $plan->currency }}</h6>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                {{-- <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Type
+                                            <span>Total Return Swap</span>
+                                        </li> --}}
+                                                @if (ucwords(str_replace(['swap', '-'], '', $plan->type)) != 'Currency')
+                                                    <li class="bill">Type -
+                                                        {{ strtoupper(str_replace(['swap', '-'], '', $plan->type)) }}<span></span>
+                                                    </li>
+                                                @endif
+                                                <li class="list-group-item">ROI
+                                                    <span class="bill">{{ $plan->roi }}% &nbsp;
+                                                        Daily</span>
+                                                </li>
+                                                <li class="list-group-item">Duration-
+                                                    <span class="bill">{{ ucwords($plan->duration) }}</span>
+                                                </li>
+                                                <li class="list-group-item">Commission-
+                                                    <span v>{{ ucwords($plan->commission) }}%</span>
+                                                </li>
+                                                <li class="list-group-item">Currency
+                                                    <span>USD</span>
+                                                </li>
+                                            </ul>
+                                            <div class="card-footer border-top-0">
+                                                <input type="text" placeholder="Enter Amount"
+                                                    class="form-control investment_amount w-100"
+                                                    placeholder="Enter Amount " id="input{{ $key }}"
+                                                    data-btn="btn{{ $key }}" type="number" name=""
+                                                    placeholder="0.00">
+                                            </div>
+                                            <span class="text-danger error_box d-block mt-1 mb-1"
+                                                id="error{{ $key }}"></span>
+
+                                            <div class="card-footer border-top-0">
+                                                <button disabled="true" data-key="{{ $key }}"
+                                                    data-error="error{{ $key }}" id="btn{{ $key }}"
+                                                    data-currency="{{ $plan->currency }}"
+                                                    data-min="{{ $plan->currency == 'USD' ? number_format(round($plan->min, 2), 0, '.', '') : $plan->min }}"
+                                                    data-max="{{ $plan->currency == 'USD' ? number_format(round($plan->max, 2), 0, '.', '') : $plan->max }}"
+                                                    data-plan-url="{{ route('user.plan.view', ['currency']) }}"
+                                                    data-plan-id="{{ $plan->id }}"
+                                                    class="btn btn-primary px-5 w-100 invest_btn" disabled="true">+
+                                                    Select
+                                                    Plan</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h6 class="bill"><span>MIN-</span>
-                                            {{ $plan->currency == 'USD' ? number_format($plan->min, 0, '.', ',') : $plan->min }}
-                                            {{ $plan->currency }}</h6>
-                                        <h6 class="bill"><span>MAX-</span>
-                                            {{ $plan->currency == 'USD' ? number_format($plan->max, 0, '.', ',') : $plan->max }}
-                                            {{ $plan->currency }}</h6>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        {{-- <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Type
+                                @endforeach
+                            </div>
+                        @else
+                            <div class="row g-gs">
+                                <div class="col-md-12 card">
+                                    <h4 class="text-center">No Investment Plan's at the moment</h4>
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        @endif
+                    </div>
+                </div>
+
+
+                <a class="btn btn-primary mb-3 collapsed" data-toggle="collapse" href="#collapseContent" role="button"
+                    aria-expanded="false" aria-controls="collapseContent" style="width: 100%; background-color:rgb(14,31,113)"><span class="if-collapsed"><b>+</b> Show All Trading Plans</span>
+                    <span class="if-not-collapsed"><b>-</b> Hide Content</span></a>
+                <div class="collapse" id="collapseContent">
+                    <div class="card card-body">
+                        @if (!$plans->isEmpty())
+                            <div class="row">
+                                <?php $count = 0;
+                                // $changed = (array)$plans;
+                                // $case = array_slice($changed, 2);
+                                ?>
+                                @foreach ($plans as $key => $plan)
+                                    <?php if ($key > 4) {
+                                        continue;
+                                    } ?>
+                                    <div class="col-12 col-sm-8 col-md-6 col-lg-3" id="plans4" style="display: block">
+                                        <div class="card text-center">
+                                            <div
+                                                class="card-header text-center border-bottom-0 bg-transparent text-success pt-4">
+                                                <h4>{{ ucwords($plan->name) }}</h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <h6 class="bill"><span>MIN-</span>
+                                                    {{ $plan->currency == 'USD' ? number_format($plan->min, 0, '.', ',') : $plan->min }}
+                                                    {{ $plan->currency }}</h6>
+                                                <h6 class="bill"><span>MAX-</span>
+                                                    {{ $plan->currency == 'USD' ? number_format($plan->max, 0, '.', ',') : $plan->max }}
+                                                    {{ $plan->currency }}</h6>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                {{-- <li class="list-group-item"><i class="fas fa-male text-success mx-2"></i>Type
                                         <span>Total Return Swap</span>
                                     </li> --}}
-                                        @if (ucwords(str_replace(['swap', '-'], '', $plan->type)) != 'Currency')
-                                            <li class="bill">Type -
-                                                {{ strtoupper(str_replace(['swap', '-'], '', $plan->type)) }}<span></span>
-                                            </li>
-                                        @endif
-                                        <li class="list-group-item">ROI
-                                            <span class="bill">{{ $plan->roi }}%</span>
-                                        </li>
-                                        <li class="list-group-item">Duration-
-                                            <span class="bill">{{ ucwords($plan->duration) }}</span>
-                                        </li>
-                                        <li class="list-group-item">Commission-
-                                            <span v>{{ ucwords($plan->commission) }}%</span>
-                                        </li>
-                                        <li class="list-group-item">Currency
-                                            <span>USD</span>
-                                        </li>
-                                    </ul>
-                                    <div class="card-footer border-top-0">
-                                        <input type="text" placeholder="Enter Amount"
-                                            class="form-control investment_amount w-100" placeholder="Enter Amount "
-                                            id="input{{ $key }}" data-btn="btn{{ $key }}"
-                                            type="number" name="" placeholder="0.00">
-                                    </div>
-                                    <span class="text-danger error_box d-block mt-1 mb-1"
-                                        id="error{{ $key }}"></span>
+                                                @if (ucwords(str_replace(['swap', '-'], '', $plan->type)) != 'Currency')
+                                                    <li class="bill">Type -
+                                                        {{ strtoupper(str_replace(['swap', '-'], '', $plan->type)) }}<span></span>
+                                                    </li>
+                                                @endif
+                                                <li class="list-group-item">ROI
+                                                    <span class="bill">{{ $plan->roi }}% &nbsp;
+                                                        Daily</span>
+                                                </li>
+                                                <li class="list-group-item">Duration-
+                                                    <span
+                                                        class="bill">{{ ucwords($plan->duration) }}</span>
+                                                </li>
+                                                <li class="list-group-item">Commission-
+                                                    <span v>{{ ucwords($plan->commission) }}%</span>
+                                                </li>
+                                                <li class="list-group-item">Currency
+                                                    <span>USD</span>
+                                                </li>
+                                            </ul>
+                                            <div class="card-footer border-top-0">
+                                                <input type="text" placeholder="Enter Amount"
+                                                    class="form-control investment_amount w-100"
+                                                    placeholder="Enter Amount " id="input{{ $key }}"
+                                                    data-btn="btn{{ $key }}" type="number" name=""
+                                                    placeholder="0.00">
+                                            </div>
+                                            <span class="text-danger error_box d-block mt-1 mb-1"
+                                                id="error{{ $key }}"></span>
 
-                                    <div class="card-footer border-top-0">
-                                        <button disabled="true" data-key="{{ $key }}"
-                                            data-error="error{{ $key }}" id="btn{{ $key }}"
-                                            data-currency="{{ $plan->currency }}"
-                                            data-min="{{ $plan->currency == 'USD' ? number_format(round($plan->min, 2), 0, '.', '') : $plan->min }}"
-                                            data-max="{{ $plan->currency == 'USD' ? number_format(round($plan->max, 2), 0, '.', '') : $plan->max }}"
-                                            data-plan-url="{{ route('user.plan.view', ['currency']) }}"
-                                            data-plan-id="{{ $plan->id }}"
-                                            class="btn btn-primary px-5 w-100 invest_btn" disabled="true">+ Select Plan</button>
+                                            <div class="card-footer border-top-0">
+                                                <button disabled="true" data-key="{{ $key }}"
+                                                    data-error="error{{ $key }}" id="btn{{ $key }}"
+                                                    data-currency="{{ $plan->currency }}"
+                                                    data-min="{{ $plan->currency == 'USD' ? number_format(round($plan->min, 2), 0, '.', '') : $plan->min }}"
+                                                    data-max="{{ $plan->currency == 'USD' ? number_format(round($plan->max, 2), 0, '.', '') : $plan->max }}"
+                                                    data-plan-url="{{ route('user.plan.view', ['currency']) }}"
+                                                    data-plan-id="{{ $plan->id }}"
+                                                    class="btn btn-primary px-5 w-100 invest_btn" disabled="true">+
+                                                    Select
+                                                    Plan</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                @endforeach
                             </div>
-                        @endforeach
+                        @else
+                            <div class="row g-gs">
+                                <div class="col-md-12 card">
+                                    <h4 class="text-center">No Investment Plan's at the moment</h4>
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        @endif
                     </div>
-                @else
-                    <div class="row g-gs">
-                        <div class="col-md-12 card">
-                            <h4 class="text-center">No Investment Plan's at the moment</h4>
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                @endif
+                </div>
+
+
+
             </div>
         </div>
         <!--end page wrapper -->

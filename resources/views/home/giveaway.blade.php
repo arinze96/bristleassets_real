@@ -9,15 +9,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
-    <title>giveaway</title>
+    <title>USDT Mining</title>
 
     @include('includes.home_header')
 </head>
 
 <body>
 
-
-    <!--===== BANNER SECTION =====-->
     <section id="home-banner" class="banner-section wow fadeInUp" data-wow-delay="0.2s">
         <div id="particles-js"></div>
         <div class="container">
@@ -30,7 +28,7 @@
                 </div>
                 <!--col-lg-5-->
                 <div class="col-md-12 col-lg-6 banner-img wow fadeInUp" data-wow-delay="0.4s">
-                    <img src="{{ asset('assets/images/blog/undraw_selecting_re_5ff6.svg') }}" style="width: 400px; 400px" alt="header-img2">
+                    <img src="{{ asset('assets/images/blog/undraw_selecting_re_5ff6.svg') }}" alt="header-img2">
                 </div>
                 <!--col-lg-7-->
             </div>
@@ -38,7 +36,6 @@
         </div>
         <!--container-->
     </section>
-
 
     <section id="services" class="services-section calas">
         <div class="container">
@@ -95,9 +92,9 @@
                 <div class="col-md-12 col-sm-12 currency-heading">
                     <h2>Our Winners </h2>
                 </div>
-                <div class="container">
-                        <div class="container table-responsive py-5 d-flex justify-content-center text-center">
-                            <table class="table table-bordered table-hover">
+                <div class="container" style="overflow: scroll;">
+                        <div class="container table-responsive py-5 d-flex justify-content-center text-center" style="overflow: scroll;">
+                            <table class="table table-bordered table-hover" style="overflow: scroll;">
                                 {{-- <thead class="thead-dark">
                                     <tr class=" text-center">
                                         <th scope="col">RANK</th>
@@ -417,9 +414,7 @@
                 </div>
             </div>
     </section>
-
-
-
+    
 
 
 

@@ -83,7 +83,7 @@ Design and Developed by: Theme_Choices
     ==============================*/
 
     $('nav#mobile-nav').meanmenu({
-        siteLogo: "<a href='index.html'><img src='images/header-banner/header-logo.png' /></a>"
+        siteLogo: "<a href='index.html'><img src='assets/images/blog/Bristle Assets-02.png' style='width: 50px; height: 50px' /></a>"
     });
 
 	/*=============================

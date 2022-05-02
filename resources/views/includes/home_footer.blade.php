@@ -8,11 +8,14 @@
 
                  <h4>BristleAssets</h4>
                  <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 200px; height: 100px" alt="">
+            
+                <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States</p>
+                <p>Email: supportAristlassets.com</p>
 
              </div>
              <!--col-md-4-->
              <div class="col-md-2 footer-nav">
-                 <h5>Quick Links</h5>
+                 <h5>About Us</h5>
                  <ul>
                      <li>
                          <a href="{{ route('user.terms') }}">Terms and conditions</a>
@@ -27,7 +30,7 @@
                          <a href="{{ route('user.terms') }}">Risk statement</a>
                      </li>
                      <li>
-                         <a href="{{ route('user.register') }}">Referral program</a>
+                         <a href="{{ route('user.refprogram') }}">Referral program</a>
                      </li>
                      <li>
                          <a href="{{ route('user.refFAQ') }}">Referral FAQ</a>
@@ -38,7 +41,7 @@
              <!--col-md-2-->
              <!--col-md-2-->
              <div class="col-md-3 footer-nav">
-                 <h5>Contact us</h5>
+                 <h5>Support</h5>
                  <ul>
                      <li><a style="color:white" href="{{ route('user.faq') }}">FAQ</a></li>
                      <li><a style="color:white" href="{{ route('user.basics') }}">Cryptocurrency Mining Basics</a></li>
@@ -49,7 +52,7 @@
              </div>
 
              <div class="col-md-2 footer-nav">
-                 <h5>Contact us</h5>
+                 <h5>Knowledge Base</h5>
                  <ul>
                      <li><a style="color:white" href="{{ route('app.home') }}">Cloud Mining</a></li>
                      <li><a style="color:white" href="{{ route('bitcoin') }}">Bitcoin Mining</a></li>
@@ -62,7 +65,7 @@
 
              </div>
              <div class="col-md-2 footer-nav">
-                <h5>Contact us</h5>
+                <h5>Knowledge Base</h5>
                 <ul>
                     <li><a style="color:white" href="{{ route('monero') }}">Monero Mining</a></li>
                     <li><a style="color:white" href="{{ route('dogecoin') }}">Dogecoin Mining</a></li>

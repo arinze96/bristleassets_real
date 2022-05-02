@@ -287,30 +287,188 @@
                 <hr class="center">
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12" style="overflow: scroll;">
                     <table class="table table-striped">
+                        <h3>Lastest Deposits</h3>
                         <thead style="background:#022E6B;  color:#ffffff;">
                             <tr>
-                                <th scope="col">Latest Deposits</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
+                                <th>id</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Amout Deposited</th>
+                                <th>Currency</th>
                             </tr>
                         </thead>
                         <tbody id="ld_body">
-                        </tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Admond
+                                    sayhel</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$21000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jonshon idaho</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$5000</td>
+                                <td>USD</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Jerry Hopper
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$4000</td>
+                                <td>Ripple</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Anjel
+                                    july</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$500</td>
+                                <td>USD</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Lagisha Benson
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$5000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Jovic Mavro
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$5600</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Carol Denica
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$7000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Laqisha jones
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$5000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>John Carrick
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$25000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Sermone White
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$7500</td>
+                                <td>USD</td>
+                            </tr>
+                        <tbody>
                     </table>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12" style="margin-top: 50px; overflow: scroll;">
                     <table class="table table-striped">
+                        <h3>Latest Withdrawals</h3>
                         <thead style="background:#FF7149;  color:#ffffff;">
                             <tr>
-                                <th scope="col">Latest Withdrawals</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
+                                <th>id</th>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Amout Deposited</th>
+                                <th>Currency</th>
                             </tr>
                         </thead>
                         <tbody id="lw_body">
-                        </tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ahmed Saheed</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$500</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jane Bannon</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$600</td>
+                                <td>USD</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Johnson Klint</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$450</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Angel Banahas</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$4500</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Lagisha Benson </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$4300</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Jovic Mavro</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$500</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Carol Denica</td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$900</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Laqisha jones
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$5000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>John Carrick
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$2000</td>
+                                <td>Bitcoin</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Sermone White
+                                </td>
+                                <td><?php echo date('d F, Y (l)'); ?></td>
+                                <td>$700</td>
+                                <td>USD</td>
+                            </tr>
+                        <tbody>
                     </table>
                 </div>
             </div>

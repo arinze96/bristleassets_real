@@ -22,7 +22,6 @@
             <div class="counter-wrapper wow fadeIn" data-wow-delay="0.2s">
                 <div class="row  my-auto ">
                     <div class="col-md-12 col-lg-12 counter-items">
-                        {{-- <span class="counter">Your easy guide to mining Bitcoin Cash</span> --}}
                         <h1 style="color: white">Mining Grin - your complete guide</h1>
                     </div>
                 </div>
@@ -39,7 +38,7 @@
         <div class="container">
             <div class="row wow fadeIn" data-wow-delay="0.2s">
                 <div class="col-md-12 col-sm-12 currency-heading">
-                    <h2>Grin Mining </h2>
+                    <h2>Grin Mining</h2>
                 </div>
                 <div class="container">
                     <div class="tradingview-widget-container" style="margin:auto;">
@@ -244,7 +243,6 @@
                             to 3 gps, but note you’d need 6GB of graphics RAM on it. If you’re wondering what gps is,
                             it’s Grin terminology, and stands for “graphs per second”.
                         </p>
-
                         <h3>
                             Your Grin mining options
                         </h3>
@@ -262,43 +260,8 @@
                         </p>
 
                         <h3>
-                            How to get started with Grin Mining
-                        </h3>
-
-                        <p>
-                            You need to store your Grin somewhere, this could be the official Grin wallet stored locally
-                            or you could opt to send your Grin earnings to a crypto exchange like HotBit, Poloniex or
-                            BitMesh. Note that you will only get your Grin payouts if your wallet is active and online,
-                            which is why using an exchange for receiving Grin receipts is a good idea. <br> <br>
-
-                            You need to get a unique login from Grin, get this from the Grin “how to start” page. You
-                            need to enter your GRIN address, it starts with either https or http. Next you need to
-                            download your mining software, for example this read-to-go version. Add your login that you
-                            retrieved from the Grin website to your miner’s settings. <br> <br>
-
-                            To use Gminer with CuckARood-29 you need: <br> <br>
-
-                            miner.exe --algo grin29 --server grin.2miners.com --port 3030 --user
-                            2aHR0cHM7Ly9ncklucHJveHkubertZm9yZXg7Bd9tLzE5ODkzMzA.RIG_ID <br> <br>
-
-                            To use lolMiner with CuckARood-29 use: <br> <br>
-
-                            lolMiner.exe --coin GRIN-AD29 --pool grin.2miners.com --port 3030 --user
-                            2aHR0cHM7Ly9ncklucHJveHkubertZm9yZXg7Bd9tLzE5ODkzMzA --pass x <br> <br>
-
-                            Alternatively, the Gminer settings for CuckAToo-31 are: <br> <br>
-
-                            miner.exe --algo grin31 --server grin.2miners.com --port 3030 --user
-                            2aHR0cHM6Ly9ncmlucHJveHkuYml0Zm9yZXguY29tLzE5ODkzMzA.RIG_ID <br> <br>
-
-                            Note that you have to replace the login string in our example with your own login, so
-                            instead of 2aHR0cHM7Ly9ncklucHJveHkubertZm9yZXg7Bd9tLzE5ODkzMzA use your own login ID. <br>
-                            <br>
-                        </p>
-
-                        <h1>
                             Cloud mining settings for Grin
-                        </h1>
+                        </h3>
 
                         <p>
                             We’ll give you examples for two cloud mining providers too. First, let’s take a look at the
@@ -355,14 +318,12 @@
                             this as an advantage for Grin.
                         </p>
 
-
+                        
                     </div>
                 </div>
+            </div>
     </section>
 
-    {{-- <section id="contact" class="contact-section">
-        <div class="container">
-            <!========================Syed Sahar Ali Raza========================!> --}}
     <div id="generic_price_table">
         <section>
             <div class="container">
@@ -370,7 +331,7 @@
                     <div class="col-md-12">
                         <!--PRICE HEADING START-->
                         <div class="price-heading clearfix">
-                            <h1>Our Mining Plan</h1>
+                            <h1>Our Trading Plan</h1>
                         </div>
                         <!--//PRICE HEADING END-->
                     </div>
@@ -619,7 +580,7 @@
                                     <li><span>Contract Duration: 5 Days</span></li>
                                     <li><span>Payouts - every day</span></li>
                                     <li><span>Min. contract: 77178 GH/s</span></li>
-                                    
+
                                 </ul>
                             </div>
                             <!--//FEATURE LIST END-->
@@ -643,9 +604,8 @@
             <a class="bottom_btn" href="{{ route('user.register') }}">Start Mining</a>
         </footer>
     </div>
-    {{-- </div> --}}
-    {{-- <!--container--> --}}
-    {{-- </section> --}}
+
+
 
 
     @include('includes.home_footer')

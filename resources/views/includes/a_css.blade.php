@@ -27,7 +27,7 @@
 	<script type="text/javascript">
 		(function () {
 			var options = {
-				whatsapp: "+2347067116962", // WhatsApp number
+				whatsapp: "+16614557684", // WhatsApp number
 				call_to_action: "Message us", // Call to action
 				position: "left", // Position may be 'right' or 'left'
 			};

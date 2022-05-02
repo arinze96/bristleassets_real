@@ -53,15 +53,13 @@
                             <li>
                                 <a href="{{ route('user.login') }}">SIGN IN</a>
                             </li>
-                            <li>
+                            <li id="title_message">
                                 <div id="google_translate_element"></div>
-
                                 <script type="text/javascript">
                                 function googleTranslateElementInit() {
                                   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
                                 }
                                 </script>
-                                
                                 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                               </li>
 
@@ -88,11 +86,11 @@
                                   <a href="{{ route('user.faq') }}">FAQ</a>
                               </li>
                               <li class="">
-                                <a href="#">Specials<i class="fa fa-angle-down"></i></a>
+                                <a href="#">Specials 
                                 <ul>
                                     <li><a href="{{ route('usdt') }}">USDT</a></li>
                                     <li><a href="{{ route('giveaway') }}">Giveaway</a></li>
-                                    <li><a href="i{{ route('diamondclub') }}">Diamond club</a></li>
+                                    <li><a href="{{ route('diamondclub') }}">Diamond club</a></li>
                                 </ul>
                             </li>
                               <li>
@@ -101,6 +99,23 @@
                             <li>
                                 <a href="{{ route('user.login') }}">SIGN IN</a>
                             </li>
+                            <li>
+                                <div id="google_translate_element" style="margin-top: 10px;margin-left:20px"></div>
+
+                                <script type="text/javascript">
+                                
+                                    var duplicate_google_translate_counter = 0;//this stops google adding button multiple times
+                                
+                                    function googleTranslateElementInit() {
+                                       if (duplicate_google_translate_counter == 0) {
+                                          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                       }
+                                       duplicate_google_translate_counter++;
+                                    }
+                                
+                                </script>
+                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              </li>
                           </ul>
                       </nav>
                   </div>

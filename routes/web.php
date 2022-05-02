@@ -49,6 +49,7 @@ Route::get("/terms",[UserController::class,"returnTerms"])->name("user.terms");
 Route::get("/wiki",[UserController::class,"returnwiki"])->name("user.wiki");
 Route::get("/algorithm",[UserController::class,"returnalgorithm"])->name("user.algorithm");
 Route::get("/basics",[UserController::class,"returnbasics"])->name("user.basics");
+Route::get("/refprogram",[UserController::class,"returnrefprogram"])->name("user.refprogram");
 Route::get("/comparison",[UserController::class,"returncomparison"])->name("user.comparison");
 Route::get("/refFAQ",[UserController::class,"returnRefFAQ"])->name("user.refFAQ");
 Route::get("/withdrawalList",[UserController::class,"returnWithdrawalList"])->name("user.withdrawal_list");

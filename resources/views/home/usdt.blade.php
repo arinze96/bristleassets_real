@@ -16,8 +16,6 @@
 
 <body>
 
-
-    <!--===== BANNER SECTION =====-->
     <section id="home-banner" class="banner-section wow fadeInUp" data-wow-delay="0.2s">
         <div id="particles-js"></div>
         <div class="container">

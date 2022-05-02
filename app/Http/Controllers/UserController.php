@@ -158,6 +158,11 @@ class UserController extends Controller
         return view("home.dash");
     }
 
+    public function returnrefprogram(Request $request)
+    {
+        return view("home.refprogram");
+    }
+
     public function returnaeon(Request $request)
     {
         return view("home.aeon");

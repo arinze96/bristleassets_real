@@ -485,7 +485,7 @@
                     <div class="col-md-12">
                         <!--PRICE HEADING START-->
                         <div class="price-heading clearfix">
-                            <h1>Our Mining Plan</h1>
+                            <h1>Our Trading Plan</h1>
                         </div>
                         <!--//PRICE HEADING END-->
                     </div>

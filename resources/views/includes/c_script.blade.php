@@ -45,4 +45,16 @@ crossorigin="anonymous"></script>
         clipboard($(this), 'cut')
     });
 </script>
+
+<script>
+    function change() {
+        document.getElementById("block1").style.display = "none"
+        document.getElementById("plans").style.display = "block"
+        document.getElementById("plans4").style.display = "none"
+    }
+    function change1() {
+        document.getElementById("block2").style.display = "none"
+        document.getElementById("block1").style.display = "block"
+    }
+</script>
 <!--app JS-->
