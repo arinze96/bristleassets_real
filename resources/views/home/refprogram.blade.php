@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-6 banner-text wow fadeInUp" data-wow-delay="0.4s">
-                    <p>Referral Program</p>
+                    {{-- <p>Referral Program</p> --}}
                     <h1>GET EXTRA
                         ABOVE 5% INCOME</h1>
                         <h6 style="color: white">We are introducing the Lao Trading Referral Program. Now you can get Above 5% hashrate of all our
