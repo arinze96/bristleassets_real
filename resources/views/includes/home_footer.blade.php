@@ -10,7 +10,9 @@
                  <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 200px; height: 100px" alt="">
             
                 <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States</p>
-                <p>Email: supportAristlassets.com</p>
+                {{-- <p>support@ristlassets.com</p> --}}
+                <p style="padding-bottom: -20px">Email: support@ristlassets.com</p>
+                <p>Phone: +16614557684</p>
 
              </div>
              <!--col-md-4-->
