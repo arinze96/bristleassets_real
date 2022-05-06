@@ -7,12 +7,12 @@
              <div class="col-md-3 footer-text">
 
                  <h4>BristleAssets</h4>
-                 <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 200px; height: 100px" alt="">
+                 <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 100px; height: 50px" alt="">
             
-                <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States</p>
-                {{-- <p>support@ristlassets.com</p> --}}
-                <p style="padding-bottom: -20px">Email: support@ristlassets.com</p>
-                <p>Phone: +16614557684</p>
+                <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States <br> Email: support@ristlassets.com <br>Phone: +16614557684 <br> Government Approvals <br>
+                United States SEC: <a href="https://adviserinfo.sec.gov/firm/summary/109227">click</a> <br> United Kingdom: <a href="https://find-and-update.company-information.service.gov.uk/company/SL015033">click</a></p>
+                
+                
 
              </div>
              <!--col-md-4-->
@@ -83,6 +83,7 @@
          </div>
          <!--row-->
      </div>
+
 
      <!--container-->
  </footer>

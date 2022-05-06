@@ -117,6 +117,24 @@
         </div>
         <!--container-->
     </section>
+
+    <section class="about-section wow fadeInUp" data-wow-delay="0.2s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 about-heading">
+                    <h2>THIS IS WHO WE ARE</h2>
+                    <p></p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video class="embed-responsive-item" controls>
+                      <source src="{{ asset('assets/videos/Bristle.mp4') }}" poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" type="video/mp4"> </source>
+                    </video>
+                  </div>
+            </div>
+            <!--row-->
+        </div>
+        <!--container-->
+    </section>
     <!--============== END ABOUT SECTION ===============-->
 
     <!--===== ABOUT SECTION =====-->
@@ -142,6 +160,7 @@
         </div>
         <!--container-->
     </section>
+    
     <!--============== END ABOUT SECTION ===============-->
 
     <!--===== SERVICES SECTION =====-->
