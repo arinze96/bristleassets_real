@@ -75,6 +75,10 @@
                                                 <option value="BNB">BINANCE COIN </option>
                                             @endif
 
+                                            @if ($application->perfectmoney_address)
+                                            <option value="BNB">PERFECT MONEY </option>
+                                        @endif
+
                                             @if ($application->ethereum_address)
                                                 <option value="ETH">ETHEREUM </option>
                                             @endif
