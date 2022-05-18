@@ -27,6 +27,15 @@
                   <div class="main-menu-area">
                       <nav class="header-nav">
                           <ul id="navigation">
+                                                      <li id="title_message">
+                                <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                                }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              </li>
                             
                               <li>
                                   <a href="{{ route('about') }}">About</a>
@@ -53,15 +62,7 @@
                             <li>
                                 <a href="{{ route('user.login') }}">SIGN IN</a>
                             </li>
-                            <li id="title_message">
-                                <div id="google_translate_element"></div>
-                                <script type="text/javascript">
-                                function googleTranslateElementInit() {
-                                  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
-                                }
-                                </script>
-                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                              </li>
+
 
                           </ul>
                       </nav>
