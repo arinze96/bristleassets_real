@@ -76,6 +76,23 @@
                   <div class="main-mobile-menu">
                       <nav id="mobile-nav">
                           <ul id="mobile-navigation" class="mobilenav">
+                            <li>
+                                <div id="google_translate_element" style="margin-top: 10px;margin-left:20px"></div>
+
+                                <script type="text/javascript">
+                                
+                                    var duplicate_google_translate_counter = 0;//this stops google adding button multiple times
+                                
+                                    function googleTranslateElementInit() {
+                                       if (duplicate_google_translate_counter == 0) {
+                                          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                       }
+                                       duplicate_google_translate_counter++;
+                                    }
+                                
+                                </script>
+                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                              </li>
                               
                               <li>
                                   <a href="{{ route('about') }}">About</a>
@@ -100,23 +117,7 @@
                             <li>
                                 <a href="{{ route('user.login') }}">SIGN IN</a>
                             </li>
-                            <li>
-                                <div id="google_translate_element" style="margin-top: 10px;margin-left:20px"></div>
-
-                                <script type="text/javascript">
-                                
-                                    var duplicate_google_translate_counter = 0;//this stops google adding button multiple times
-                                
-                                    function googleTranslateElementInit() {
-                                       if (duplicate_google_translate_counter == 0) {
-                                          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                                       }
-                                       duplicate_google_translate_counter++;
-                                    }
-                                
-                                </script>
-                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                              </li>
+                            
                           </ul>
                       </nav>
                   </div>
