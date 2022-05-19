@@ -13,6 +13,13 @@
     <ul class="metismenu" id="menu">
 
         {{-- //dashboard --}}
+        <li>
+            <a href="{{ route("app.home") }}">
+                <div class="parent-icon"><i class="bx bxs-bank"></i>
+                </div>
+                <div class="menu-title">Home</div>
+            </a>
+        </li>
 
         <li>
             <a href="{{ route("user.dashboard.view") }}">
