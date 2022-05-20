@@ -9,8 +9,8 @@
                  <h4>BristleAssets</h4>
                  <img src="{{ asset('assets/images/blog/Bristle Assets-03.png') }}" style="width: 100px; height: 50px" alt="">
             
-                <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States <br> Email: support@ristlassets.com <br>Phone: +16614557684 <br> Government Approvals <br>
-                United States SEC: <a href="https://adviserinfo.sec.gov/firm/summary/109227">click</a> <br> United Kingdom: <a href="https://find-and-update.company-information.service.gov.uk/company/SL015033">click</a></p>
+                <p>Address: 448 S Hill St #303, Los Angeles, CA 90013, United States <br> Email: support@ristleassets.com <br>Phone: +16614557684 <br> Government Approvals <br>
+                United States SEC: <a href="https://adviserinfo.sec.gov/firm/summary/109227">click</a> </p>
                 
                 
 
