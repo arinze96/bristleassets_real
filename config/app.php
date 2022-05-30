@@ -15,7 +15,7 @@ return [
 
     'name' => env('APP_NAME', 'Bizzainvest'),
     'description' => env('APP_DESCRIPTION', 'Grow Your Passive Income Hourly and Increase Your Earnings Hourly'),
-    'chat_link' => env('CHAT_LINK', 'prostackinvest'),
+    'chat_link' => env('CHAT_LINK', 'Bristleassets'),
     'email' => env('APP_EMAIL', ''),
     'facebook' => env('APP_FACEBOOK', ''),
     'twitter' => env('APP_TWITTER', ''),
@@ -37,10 +37,10 @@ return [
     "deposit_status"=>[1=>"processing",2=>"approve",3=>"decline"],
     "edit_names"=>[],
     "address"=>"1260 Broadway, New York, NY 10001",
-    "domain"=> "Prostackinvest",
+    "domain"=> "Bristleassets",
     "referral_initial_percent"=>10,
     "referral_consequent_percent"=>10,
-    "admin_mail"=>"support@prostackinvest.com",
+    "admin_mail"=>"support@bristleassets.com",
 
     /*
     |--------------------------------------------------------------------------
