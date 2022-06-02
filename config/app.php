@@ -41,6 +41,7 @@ return [
     "referral_initial_percent"=>10,
     "referral_consequent_percent"=>10,
     "admin_mail"=>"support@bristleassets.com",
+    "verify_mail"=>"{{ route('user.completeverifyEmail') }}",
 
     /*
     |--------------------------------------------------------------------------

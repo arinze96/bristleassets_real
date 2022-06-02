@@ -38,6 +38,8 @@ Route::get('/diamondclub', [UserController::class,"returnDiamondClub"])->name("d
 Route::get('/investmentplans', [UserController::class,"returnInvestmentPlan"])->name("investmentplans");
 Route::get("/register",[UserController::class,"register"])->name("user.register");
 Route::get("/contact",[UserController::class,"returnContact"])->name("user.contact");
+Route::get("/verifyEmail",[UserController::class,"verifyEmail"])->name("user.verifyEmail");
+Route::get("/completeverifyEmail/{token}",[UserController::class,"completeverifyEmail"])->name("user.completeverifyEmail");
 Route::get("/register/{ref?}",[UserController::class,"register"])->name("user.register");
 Route::post("/register/{ref?}",[UserController::class,"register"])->name("user.register.post");
 // Route::get("/forgot-password",[UserController::class,"forgotPasswordAdmin"])->name("user.forgot-password");
@@ -55,7 +57,7 @@ Route::get("/refFAQ",[UserController::class,"returnRefFAQ"])->name("user.refFAQ"
 Route::get("/withdrawalList",[UserController::class,"returnWithdrawalList"])->name("user.withdrawal_list");
 Route::get("/depositeList",[UserController::class,"returnDepositeList"])->name("user.deposit_list");
 Route::get("/topInvestors",[UserController::class,"returnTopInvestor"])->name("user.top_investors");
-Route::post("/login",[UserController::class,"login"])->name("user.login.post");
+Route::post("/login",[UserController::class,"login"])->middleware(["verified"])->name("user.login.post");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan");
 // Route::post("/person_loan",[UserController::class,"loan"])->name("user.loan.post");
 Route::get("/static/{name}",[UserController::class,"staticPages"])->name("user.pages.view");

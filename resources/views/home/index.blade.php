@@ -18,9 +18,22 @@
 
 
     <!--===== BANNER SECTION =====-->
+    {{-- <section style="width: 100%; height: 50px; background-color:aquamarine">
+
+    </section> --}}
+
+
     <section id="home-banner" class="banner-section wow fadeInUp" data-wow-delay="0.2s">
         <div id="particles-js"></div>
         <div class="container">
+                {{-- <div id="google_translate_element" style="height: 100px; width: 100px; background-color: green; position:fixed; left: 150px; bottom:20px"></div>
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+                }
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
+              
             <div class="row">
                 <div class="col-md-12 col-lg-6 banner-text wow fadeInUp" data-wow-delay="0.4s">
                     <h1>MINE AND TRADE
@@ -39,6 +52,10 @@
         </div>
         <!--container-->
     </section>
+
+    {{-- <section style="width: 100%; height: 50px; background-color:aquamarine">
+
+    </section> --}}
     <!--============== END BANNER SECTION ===============-->
     <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
     <div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,2010,3408" currency="USD" theme="light"

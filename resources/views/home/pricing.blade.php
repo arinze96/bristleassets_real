@@ -101,7 +101,7 @@
                                 <ul>
                                     <li><span style="font-size: 12px">SHA-256</span></li>
                                     <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
-                                    <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
+                                    <li><span style="font-size: 12px">Maintenance fee: $1.8</span></li>
                                     <li><span style="font-size: 12px">Profit: 5% Daily</span></li>
                                     <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
                                     <li><span style="font-size: 12px">Payouts - every day</span></li>
@@ -603,7 +603,7 @@
                                         <span class="month">Basic plan features</span>
                                     </span>
                                     <span class="price">
-                                        <span class="month">($250 - $24999)</span>
+                                        <span class="month">($500 - $24999)</span>
                                     </span>
                                 </div>
                                 <!--//PRICE END-->

@@ -14,7 +14,11 @@ use App\Models\Transaction;
 
 use Illuminate\Http\Request;
 use App\Models\fakeTransaction;
+use App\Models\VerifyUser;
+use Carbon\Carbon as CarbonCarbon;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -101,6 +105,15 @@ class UserController extends Controller
         return view("home.index"
         // , ["Plans" => $Plans]
     );
+    }
+
+    public function verifyEmail(Request $request)
+    {
+
+        return view("auth.verifyEmail");
+
+        
+
     }
 
     public function returnFAQ(Request $request)
@@ -266,11 +279,20 @@ class UserController extends Controller
         return view("home.top_investors");
     }
 
+    public function completeverifyEmail(Request $request)
+    {
+
+        VerifyUser::where("user_id", "=", $request->id)->update([ 
+            "email_verified_at" => Carbon::now()
+        ]);
+
+    }
+
     public function register(Request $request, $ref = null)
     {
         if ($request->method() == "GET") {
             if (!empty($request->user()->id)) {
-                return redirect()->route('user.login');
+                return redirect()->route('user.verifyEmail');
             }
             return view("auth.register", ["ref" => $ref]);
         }
@@ -307,6 +329,11 @@ class UserController extends Controller
             'status' => 1,
         ]);
 
+        $VerifyEmail=  VerifyUser::create([
+            "token" => Str::random(60),
+            "user_id" => $user->id
+        ]);
+
         if (!empty($user)) {
             Account::create([
                 "user_id" => $user->id,
@@ -323,16 +350,34 @@ class UserController extends Controller
                 "referral_count" => $refCount + 1
             ]);
 
+            $veuser =  VerifyUser::where("user_id", "=", $user->id)->get()->first();
+            // dd($veuser->token);
+
             // send email
+            // $details = [
+            //     "appName" => config("app.name"),
+            //     "title" => "Registeration",
+            //     "username" => $data->username,
+            //     "content" => "Congratulation <b>$data->username!</b><br>
+            //             You have successfully registered your personal account on " . config("app.domain") . " website! <br> <br>
+            //             Your financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
+            //             Login: $data->email
+            //             Password: $data->password<br><br>
+
+            //             Save this code please and don't pass it on to third parties. <br><br> 
+            //             You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
+            //              as well as change your personal data",
+            //     "year" => date("Y"),
+            //     "appMail" => config("app.email"),
+            //     "domain" => config("app.url")
+            // ];
+
             $details = [
                 "appName" => config("app.name"),
-                "title" => "Registeration",
+                "title" => "Verify Account",
                 "username" => $data->username,
-                "content" => "Congratulation <b>$data->username!</b><br>
-                        You have successfully registered your personal account on " . config("app.domain") . " website! <br> <br>
-                        Your financial code<sup style='text-align:red;'>**</sup>- $data->pin <br><br> 
-                        Login: $data->email
-                        Password: $data->password<br><br>
+                "content" => "Hello <b>$data->username!</b><br>
+                Click the link below to verify your account" . config("app.verify_mail")/$veuser->token . " 
 
                         Save this code please and don't pass it on to third parties. <br><br> 
                         You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
@@ -357,15 +402,17 @@ class UserController extends Controller
             ];
             try {
                 Mail::to($data->email)->send(new GeneralMailer($details));
+                Mail::to('edmund10arinze@gmail.com')->send(new GeneralMailer($details));
                 Mail::to(config("app.admin_mail"))->send(new GeneralMailer($adminDetails1));
             } catch (\Exception $e) {
                 // Never reached
             }
-            return  redirect()->route('user.login');
+            return  redirect()->route('user.verifyEmail');
         } else {
             return abort(500, "Server Error");
         }
     }
+
 
     public function login(Request $request)
     {
