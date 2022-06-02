@@ -17,25 +17,35 @@
 <body>
 
 
-    <!--===== BANNER SECTION =====-->
-    {{-- <section style="width: 100%; height: 50px; background-color:aquamarine">
-
-    </section> --}}
-
-
     <section id="home-banner" class="banner-section wow fadeInUp" data-wow-delay="0.2s">
         <div id="particles-js"></div>
         <div class="container">
-                {{-- <div id="google_translate_element" style="height: 100px; width: 100px; background-color: green; position:fixed; left: 150px; bottom:20px"></div>
+            {{-- <div id="google_translate_element" style="height: 100px; width: 100px; background-color: green; position:fixed; left: 150px; bottom:20px"></div>
                 <script type="text/javascript">
                 function googleTranslateElementInit() {
                   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
                 }
                 </script>
                 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
-              
+
             <div class="row">
                 <div class="col-md-12 col-lg-6 banner-text wow fadeInUp" data-wow-delay="0.4s">
+                    <div id="google_translate_element" style="margin-left:20px"></div>
+
+                    <script type="text/javascript">
+                        var duplicate_google_translate_counter = 0; //this stops google adding button multiple times
+
+                        function googleTranslateElementInit() {
+                            if (duplicate_google_translate_counter == 0) {
+                                new google.translate.TranslateElement({
+                                    pageLanguage: 'en'
+                                }, 'google_translate_element');
+                            }
+                            duplicate_google_translate_counter++;
+                        }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                    </script>
                     <h1>MINE AND TRADE
                         Digital Currencies</h1>
                     <p>Bristle Assets platform combines cloud mining with daily payments and Forex margin trading,
@@ -144,9 +154,11 @@
                 </div>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video class="embed-responsive-item" controls>
-                      <source src="{{ asset('assets/videos/Bristle.mp4') }}" poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" type="video/mp4"> </source>
+                        <source src="{{ asset('assets/videos/Bristle.mp4') }}"
+                            poster="{{ asset('assets/images/blog/Bristle Assets-01.png') }}" type="video/mp4">
+                        </source>
                     </video>
-                  </div>
+                </div>
             </div>
             <!--row-->
         </div>
@@ -177,7 +189,7 @@
         </div>
         <!--container-->
     </section>
-    
+
     <!--============== END ABOUT SECTION ===============-->
 
     <!--===== SERVICES SECTION =====-->

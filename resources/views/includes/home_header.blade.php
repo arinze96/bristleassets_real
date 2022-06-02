@@ -28,13 +28,13 @@
                       <nav class="header-nav">
                           <ul id="navigation">
                                                       <li id="title_message">
-                                <div id="google_translate_element"></div>
+                                {{-- <div id="google_translate_element"></div>
                                 <script type="text/javascript">
                                 function googleTranslateElementInit() {
                                   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
                                 }
                                 </script>
-                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
                               </li>
                             
                               <li>
@@ -77,7 +77,7 @@
                       <nav id="mobile-nav">
                           <ul id="mobile-navigation" class="mobilenav">
                             <li>
-                                <div id="google_translate_element" style="margin-top: 10px;margin-left:20px"></div>
+                                {{-- <div id="google_translate_element" style="margin-top: 10px;margin-left:20px"></div>
 
                                 <script type="text/javascript">
                                 
@@ -91,7 +91,7 @@
                                     }
                                 
                                 </script>
-                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
                               </li>
                               
                               <li>
