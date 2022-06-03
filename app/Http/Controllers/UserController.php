@@ -281,10 +281,16 @@ class UserController extends Controller
 
     public function completeverifyEmail(Request $request)
     {
-
-        VerifyUser::where("user_id", "=", $request->id)->update([ 
+        $url = (request()->url());
+        $path = (parse_url($url));
+        $host = explode('/',$path['path']);
+        $user_id = (int)$host[3];
+        // dd($user_id);
+        User::where("id", "=", $user_id)->update([ 
             "email_verified_at" => Carbon::now()
         ]);
+
+        return view("auth.Emailverified");
 
     }
 
@@ -376,9 +382,9 @@ class UserController extends Controller
                 "appName" => config("app.name"),
                 "title" => "Verify Account",
                 "username" => $data->username,
-                "content" => "Hello <b>$data->username!</b><br>
-                Click the link below to verify your account" . config("app.verify_mail")/$veuser->token . " 
-
+                "content" => "Hello <b>$data->username!</b><br> <br> <br>
+                Click the link below to verify your account <br> " . route("user.completeverifyEmail",[$veuser->token, $user->id]) . " 
+                        <br> <br>
                         Save this code please and don't pass it on to third parties. <br><br> 
                         You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
                          as well as change your personal data",
@@ -402,12 +408,21 @@ class UserController extends Controller
             ];
             try {
                 Mail::to($data->email)->send(new GeneralMailer($details));
-                Mail::to('edmund10arinze@gmail.com')->send(new GeneralMailer($details));
+                //code...
+            } catch (\Exception $e) {
+                echo 'first';
+                dd($e);
+                //throw $th;
+            }
+            try {
+                // Mail::to('edmund10arinze@gmail.com')->send(new GeneralMailer($details));
                 Mail::to(config("app.admin_mail"))->send(new GeneralMailer($adminDetails1));
             } catch (\Exception $e) {
+                echo 'first';
+                dd($e);
                 // Never reached
             }
-            return  redirect()->route('user.verifyEmail');
+            return  redirect()->route('user.login');
         } else {
             return abort(500, "Server Error");
         }
@@ -434,7 +449,11 @@ class UserController extends Controller
         ]);
 
         $user = User::where("email", "=", "{$data->email}")->get()->first();
-        // dd($user);
+        $verified = $user->email_verified_at;
+
+        if($verified == null ){
+            return view("auth.verifyEmail");
+        }
         if ($user && Hash::check($data->password, $user->password)) {
             if ($user->status != 1) {
                 return view("auth.login", ["noMatch" => "Your account has been suspended by the administration, please report to " . config("app.email")]);

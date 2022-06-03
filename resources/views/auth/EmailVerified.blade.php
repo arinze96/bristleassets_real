@@ -34,15 +34,15 @@
             <div class="wrap-login100">
                 <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" method="POST" action="{{ route("user.login") }}">
                     <span class="login100-form-title" style="background-color: #90EE90                    ">
-                        Account Verification
+                        Account Verified!!
                     </span>
 					@csrf
 
 
                     <div class="container-login100-form-btn" style="width: 100%; height: 50px">
-                        <h4>Verify your email Account and Signin</h4>
+                        <h4 style="text-align: center">Your account has been verified Successfully</h4>
                     </div>
-
+                    
                     <div class="container-login100-form-btn" style="width: 100%; height: 50px">
                         <a href="{{ route('user.login') }}" style="text-align: center; font-size: 25px; margin-top: 10px" >
                             <h3 style="text-align: center">Continue</h3>
