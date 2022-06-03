@@ -30,7 +30,7 @@
 
             <div class="row">
                 <div class="col-md-12 col-lg-6 banner-text wow fadeInUp" data-wow-delay="0.4s">
-                    <div id="google_translate_element" style=" bottom: 20px; position:fixed"></div>
+                    <div id="google_translate_element" style="margin-top: -100px; position:fixed"></div>
 
                     <script type="text/javascript">
                         var duplicate_google_translate_counter = 0; //this stops google adding button multiple times
