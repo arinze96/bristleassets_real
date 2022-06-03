@@ -290,7 +290,7 @@ class UserController extends Controller
             "email_verified_at" => Carbon::now()
         ]);
 
-        return view("auth.Emailverified");
+        return view("auth.EmailVerified");
 
     }
 
