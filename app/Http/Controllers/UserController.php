@@ -102,18 +102,16 @@ class UserController extends Controller
 
         // $Plans =  Plan::orderBy('created_at', 'DESC')->get();
 
-        return view("home.index"
-        // , ["Plans" => $Plans]
-    );
+        return view(
+            "home.index"
+            // , ["Plans" => $Plans]
+        );
     }
 
     public function verifyEmail(Request $request)
     {
 
         return view("auth.verifyEmail");
-
-        
-
     }
 
     public function returnFAQ(Request $request)
@@ -283,15 +281,14 @@ class UserController extends Controller
     {
         $url = (request()->url());
         $path = (parse_url($url));
-        $host = explode('/',$path['path']);
+        $host = explode('/', $path['path']);
         $user_id = (int)$host[3];
         // dd($user_id);
-        User::where("id", "=", $user_id)->update([ 
+        User::where("id", "=", $user_id)->update([
             "email_verified_at" => Carbon::now()
         ]);
 
         return view("auth.EmailVerified");
-
     }
 
     public function register(Request $request, $ref = null)
@@ -335,7 +332,7 @@ class UserController extends Controller
             'status' => 1,
         ]);
 
-        $VerifyEmail=  VerifyUser::create([
+        $VerifyEmail =  VerifyUser::create([
             "token" => Str::random(60),
             "user_id" => $user->id
         ]);
@@ -352,7 +349,7 @@ class UserController extends Controller
                 "dodgecoin_address" => "00",
             ]);
 
-            User::where("username", "=", $user->referral)->update([ 
+            User::where("username", "=", $user->referral)->update([
                 "referral_count" => $refCount + 1
             ]);
 
@@ -383,7 +380,7 @@ class UserController extends Controller
                 "title" => "Verify Account",
                 "username" => $data->username,
                 "content" => "Hello <b>$data->username!</b><br> <br> <br>
-                Click the link below to verify your account <br> " . route("user.completeverifyEmail",[$veuser->token, $user->id]) . " 
+                Click the link below to verify your account <br> " . route("user.completeverifyEmail", [$veuser->token, $user->id]) . " 
                         <br> <br>
                         Save this code please and don't pass it on to third parties. <br><br> 
                         You need a financial code when you <br> withdraw funds from your " . config("app.name") . " account <br>
@@ -449,11 +446,9 @@ class UserController extends Controller
         ]);
 
         $user = User::where("email", "=", "{$data->email}")->get()->first();
-        $verified = $user->email_verified_at;
+        // $verified = $user->email_verified_at;
+        // dd($verified);
 
-        if($verified == null ){
-            return view("auth.verifyEmail");
-        }
         if ($user && Hash::check($data->password, $user->password)) {
             if ($user->status != 1) {
                 return view("auth.login", ["noMatch" => "Your account has been suspended by the administration, please report to " . config("app.email")]);
@@ -461,7 +456,11 @@ class UserController extends Controller
             Auth::loginUsingId($user->id);
             $route = ($user->role  == 1) ? "admin.dashboard.view" : "user.dashboard.view";
             return redirect()->route($route);
-        } else {
+        } else if ($user == null) {
+            return view("auth.login", ["noMatch" => "Invalid Login Detail"]);
+        } else if ($user->email_verified_at == null) {
+            return view("auth.verifyEmail");
+        }else{
             return view("auth.login", ["noMatch" => "Invalid Login Detail"]);
         }
     }
@@ -609,21 +608,22 @@ class UserController extends Controller
     public function dashboard(Request $request)
     {
         if ($request->method() == "GET") {
-             $user = $request->user();
-             $deposits = Transaction::where("type", "=", config("app.transaction_type")[0])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            $user = $request->user();
+            $deposits = Transaction::where("type", "=", config("app.transaction_type")[0])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             //  dd($deposits);
-             $investments = Transaction::where("type", "=", config("app.transaction_type")[1])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            $investments = Transaction::where("type", "=", config("app.transaction_type")[1])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             //  dd($investments);
-             $loans = Loan::where("user_id", "=", $user->id)->get()->first();
+            $loans = Loan::where("user_id", "=", $user->id)->get()->first();
             //  dd($loans);
-             $withdrawals = Transaction::where("type", "=", config("app.transaction_type")[2])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
+            $withdrawals = Transaction::where("type", "=", config("app.transaction_type")[2])->where("user_id", "=", $user->id)->orderBy("created_at", "desc")->orderBy("status", "asc")->limit(10)->get();
             //  dd($withdrawals);
-             $userAccount = Account::where("user_id", "=", $user->id)->get()->first();
-             $transaction = Transaction::where("user_id", "=", $user->id)->where("status", "=", 2)->get();
+            $userAccount = Account::where("user_id", "=", $user->id)->get()->first();
+            $transaction = Transaction::where("user_id", "=", $user->id)->where("status", "=", 2)->get();
             //  dd($transaction);
-            return view("customer.index"
-             , ["user" => $user, "account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans, "transactions" => $transaction]
-        );
+            return view(
+                "customer.index",
+                ["user" => $user, "account" => $userAccount, "deposits" => $deposits, "investments" => $investments, "withdrawals" => $withdrawals, "loans" => $loans, "transactions" => $transaction]
+            );
         }
     }
 
@@ -738,8 +738,8 @@ class UserController extends Controller
                     Transaction::select("users.firstname", "users.lastname", "users.phone", "users.username", "users.country", "transactions.*")->where("type", "=", config("app.transaction_type")[0])->where("transactions.status", "=", 1)->orderBy("transactions.created_at", "desc")->leftJoin('users', 'transactions.user_id', '=', 'users.id')->get() :
 
                     Transaction::select("users.firstname", "users.lastname", "users.phone", "users.username", "users.country", "transactions.*")->where("type", "=", config("app.transaction_type"))->orderBy("transactions.created_at", "desc")->leftJoin('users', 'transactions.user_id', '=', 'users.id')->get();
-                    $ac = Account::where("user_id", "=", $request->user_id);
-                    // dd($ac);
+                $ac = Account::where("user_id", "=", $request->user_id);
+                // dd($ac);
 
                 return view("admin.$name-deposit", ["deposits" => $deposits]);
             } else {
@@ -783,15 +783,11 @@ class UserController extends Controller
             } else {
                 return view("admin.$name-deposit", ["deposit" => $deposits, "error" => "Deposit data failed to update"]);
             }
-        } 
-        
-        elseif ($name == "delete") {
+        } elseif ($name == "delete") {
             $deposit = Transaction::where("id", "=", $id)->get()->first();
             $deposit->delete();
             echo json_encode(["success" => true]);
-        } 
-        
-        elseif ($name == "approve") {
+        } elseif ($name == "approve") {
             $deposit = Transaction::where("id", "=", $id)->get()->first();
             $userAccount = Account::where("id", "=", $deposit->user_id)->get()->first();
             if ($deposit->status == 2) {
@@ -835,36 +831,29 @@ class UserController extends Controller
 
 
             return response()->json(["success" => true, "message" => "Deposit successfully approved"]);
-        }
-        
-        elseif($name == 'addInvestment') {
+        } elseif ($name == 'addInvestment') {
             $investment = Transaction::where("id", "=", $id)->get()->first();
-            if(strtotime($investment->close_date) >= time()){
+            if (strtotime($investment->close_date) >= time()) {
                 return response()->json(["error" => true, "message" => "This investment is still running"]);
             }
             $acct_user = Account::where("user_id", "=", $investment->user_id)->get()->first();
             Account::where("user_id", "=", $investment->user_id)->update([
-                    "dolla_balance" =>$acct_user->dolla_balance + $investment->growth_amount
-                ]);
-                // echo json_encode(["success" => true]);
-                return response()->json(["success" => true]);
-        }
-
-        elseif($name == 'addRef'){
+                "dolla_balance" => $acct_user->dolla_balance + $investment->growth_amount
+            ]);
+            // echo json_encode(["success" => true]);
+            return response()->json(["success" => true]);
+        } elseif ($name == 'addRef') {
             $acct_user = Account::where("user_id", "=", $id)->get()->first();
             $user = $request->user();
             // echo ($acct_user);
             // echo $acct_user->dolla_balance + $acct_user->referral_balance;
 
-           
+
             Account::where("user_id", "=", $id)->update([
-                    "dolla_balance" => $acct_user->dolla_balance + $acct_user->referral_balance
-                ]);
-                return response()->json(["success" => true]);
-               
-        }
-        
-        elseif ($name == "decline") {
+                "dolla_balance" => $acct_user->dolla_balance + $acct_user->referral_balance
+            ]);
+            return response()->json(["success" => true]);
+        } elseif ($name == "decline") {
             $deposit = Transaction::where("id", "=", $id)->get()->first();
             $userAccount = Account::where("id", "=", $deposit->user_id)->get()->first();
             if ($deposit->status == 3) {
