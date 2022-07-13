@@ -292,7 +292,7 @@
                                     <li><span style="font-size: 12px">SHA-256</span></li>
                                     <li><span style="font-size: 12px">10 GH/s = 0.9$</span> </li>
                                     <li><span style="font-size: 12px">Maintenance fee: $0.00</span></li>
-                                    <li><span style="font-size: 12px">Profit: 5% Daily</span></li>
+                                    <li><span style="font-size: 12px">Profit: 0.8% Daily</span></li>
                                     <li><span style="font-size: 12px">Contract Duration: 5 Days</span></li>
                                     <li><span style="font-size: 12px">Payouts - every day</span></li>
                                     <li><span style="font-size: 12px">Min. contract: 77178 GH/s</span></li>

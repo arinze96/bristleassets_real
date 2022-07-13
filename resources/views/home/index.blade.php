@@ -369,7 +369,7 @@
                                 </td>
                                 <td><?php echo date('d F, Y (l)'); ?></td>
                                 <td>$4000</td>
-                                <td>Ripple</td>
+                                <td>USDT</td>
                             </tr>
                             <tr>
                                 <td>4</td>
@@ -640,7 +640,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 blog-heading">
-                    <h2>OUR MINIG AND TRADING CONTRACTS</h2>
+                    <h2>OUR MINING AND TRADING CONTRACTS</h2>
 
                     <p>
                         We offer you the most profitable and reliable cloud mining contracts by providing<br>

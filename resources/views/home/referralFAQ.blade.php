@@ -44,7 +44,7 @@
                 <div class="container">
                     <div class="tradingview-widget-container" style="margin:auto;">
                     <h3>
-                        How to refer a friend to Lao Trading?
+                        How to refer a friend to Bristle Assets?
                     </h3>
                     <p>Copy your tracking link on Referrals page and share this link everywhere! Give it to your friends, colleagues, post it on your social media pages, blog, everywhere!</p>
 

@@ -26,7 +26,7 @@
                     {{-- <p>Referral Program</p> --}}
                     <h1>GET EXTRA
                         ABOVE 5% INCOME</h1>
-                        <h6 style="color: white">We are introducing the Lao Trading Referral Program. Now you can get Above 5% hashrate of all our
+                        <h6 style="color: white">We are introducing the Bristle Assets Referral Program. Now you can get Above 5% hashrate of all our
                             referred clients purchases. Refer your family members, friends, colleagues and earn extra cash!
                             
                             Example: client purchased a contract worth $1000 - your commission will be above $50.</h6>

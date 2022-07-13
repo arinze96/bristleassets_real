@@ -210,11 +210,11 @@
                         </p>
 
                         <h3>
-                            What Is Lao Trading?
+                            What Is Bristle Assets?
                         </h3>
 
                         <p>
-                            What Is Lao Trading? Lao Trading offers you a smart and easy way to mine using our cloud
+                            What Is Bristle Assets? Bristle Assets offers you a smart and easy way to mine using our cloud
                             hosting solution. Our solution is designed for those who are new to the world of
                             cryptocurrencies, as well as for cryptocurrency experts and large-scale end users. Lao
                             Trading is the world’s first large-scale multi-algorithm cloud-mining service, offering an

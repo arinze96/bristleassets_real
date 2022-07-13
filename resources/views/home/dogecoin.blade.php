@@ -263,7 +263,7 @@
 
                         <p>
                             You might find some cloud mining vendors offer a couple of months of free mining. However
-                            always make sure you are completely aware of all terms and conditions. Lao Trading can be a
+                            always make sure you are completely aware of all terms and conditions. Bristle Assets can be a
                             good option here.
                         </p>
 

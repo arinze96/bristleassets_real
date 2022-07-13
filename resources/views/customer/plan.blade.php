@@ -34,7 +34,7 @@
 
                 <a class="btn btn-primary mb-3 collapsed" data-toggle="collapse" href="#collapseContent1" role="button"
                     aria-expanded="false" aria-controls="collapseContent1" style="width: 100%; background-color:rgb(14,31,113)"><span class="if-collapsed"><b>+</b> Show
-                        All Minig Plans </span>
+                        All Mining Plans </span>
                     <span class="if-not-collapsed"><b>-</b> Hide Content</span></a>
                 <div class="collapse" id="collapseContent1">
                     <div class="card card-body">
