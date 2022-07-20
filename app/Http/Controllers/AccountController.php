@@ -324,7 +324,6 @@ class AccountController extends Controller
         }
     }
 
-
     /**
      * This function is used to view plans
      */
@@ -491,7 +490,6 @@ class AccountController extends Controller
             return view("customer.partners", ["application" => $application, "account" => $userAccount]);
         }
     }
-
 
     /**
      * This function is used to view plans
