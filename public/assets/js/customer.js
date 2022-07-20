@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $(".deposit_cash").click(processDeposit);
+  $(".deposit_cash").off('click').on('click',processDeposit);
   $("#buysell-amount").val("");
 
   $("#buysell-amount").keyup(function(){
@@ -9,7 +9,7 @@ $(document).ready(function(){
   })
   $(".confirm_deposit").click(confirmDeposit);
 
-  $(".investment_amount").keyup(processInvestmentAmount);
+  $(".investment_amount").off('keyup').on('keyup',processInvestmentAmount);
   $(".invest_btn").click(investMoney);
   $(".currency_convert").change(updateBalanceInfo);
   $(".exchange_btn").click(convertUSD);
@@ -325,6 +325,7 @@ function processInvestmentAmount(e){
 
 // This function processes deposite
 function processDeposit(e){
+  e.stopPropagation();
   e.preventDefault();
   $btn = $(this);
   $errorBox = $("#error_box");
